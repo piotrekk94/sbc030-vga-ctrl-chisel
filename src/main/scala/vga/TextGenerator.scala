@@ -45,9 +45,9 @@ class TextGenerator extends Module{
   io.hsync := hsync_d
   io.vsync := vsync_d
 
-  io.red := Cat(colorData(0), colorData(3))
+  io.red := Cat(colorData(2), colorData(3))
   io.green := Cat(colorData(1), colorData(3))
-  io.blue := Cat(colorData(2), colorData(3))
+  io.blue := Cat(colorData(0), colorData(3))
 
 
   when(colSelect === 7.U){
